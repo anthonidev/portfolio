@@ -54,8 +54,8 @@ const ProjectCard: FunctionComponent<{
                   />
                 </motion.div>
                 <motion.div variants={fadeInUp} className="flex justify-center my-4 space-x-3">
-                  <a href={github_url} className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200">
-                    <AiFillGithub /> <span className="tracking-wide">Github</span>
+                  <a href={github_url} target="_blank" rel="noopener noreferrer" className="flex items-center px-4 py-2 hover:dark:bg-dev-200 space-x-3 text-lg text-dev border border-dev rounded-lg bg-gray-200 dark:bg-dark-200">
+                    <AiFillGithub /> <span className="tracking-wide ">Github</span>
                   </a>
                  
                 </motion.div>
@@ -64,9 +64,9 @@ const ProjectCard: FunctionComponent<{
               <motion.div variants={stagger} initial="initial" animate="animate">
                 <motion.h2 variants={fadeInUp} className="mb-3 text-xl md:text-1xl  lg:text-3xl font-medium  tracking-wide text-let-100">{name}</motion.h2>
                 <motion.h3 variants={fadeInUp} className="mb-3 font-medium tracking-wide text-let text-base md:text-lg lg:text-xl">{description}</motion.h3>
-                <motion.div variants={fadeInUp} className="grid  grid-cols-12 gap-4">
+                <motion.div variants={fadeInUp} className="grid  grid-cols-12 gap-4 ">
                   {
-                    key_techs.map(tech => <span className="mx-4 md:mx-0 col-span-6 sm:col-span-4 md:col-span-6 lg:col-span-4 xl:col-span-3 text-center flex justify-center items-center  tracking-wider border-2 border-let text-let-100 text-xs md:text-base lg:text-lg" key={tech}>{tech}</span>)
+                    key_techs.map(tech => <span className="rounded-lg mx-4 md:mx-0 col-span-6 sm:col-span-4 md:col-span-6 lg:col-span-4 xl:col-span-3 text-center flex justify-center items-center  tracking-wider border-2 border-let text-let-100 text-xs md:text-base lg:text-lg" key={tech}>{tech}</span>)
                   }
                 </motion.div>
                 <button

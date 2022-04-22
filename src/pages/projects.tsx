@@ -1,18 +1,17 @@
 import React, { useState } from 'react'
 import Layout from '../components/layout/Layout'
-import { Category } from '../types/types';
-import { projects as projectsData } from '../helpers/data'
+import { Category, IProject } from '../types/types';
+import { projectsData } from '../helpers/data'
 import { motion } from 'framer-motion';
 import ProjectsNavbar from '../components/items/ProjectsNavbar';
 import { fadeInUp, routeAnimation, stagger } from '../motion/animations';
 import ProjectCard from '../components/items/ProjectCard';
 
-const projects = () => {
-    const [projects, setProjects] = useState(projectsData);
-    const [active, setActive] = useState("all");
+const Projects = () => {
 
+    const [projectsview, setProjects] = useState<IProject[]>(projectsData);
+    const [active, setActive] = useState<string>("all");
     const [showDetail, setShowDetail] = useState<number | null>(null)
-
 
     const handlerFilterCategory = (category: Category | "all") => {
 
@@ -36,9 +35,8 @@ const projects = () => {
                         <ProjectsNavbar handlerFilterCategory={handlerFilterCategory} active={active} />
 
                         <motion.div variants={stagger} initial="initial" animate="animate" className="grid  grid-cols-12 gap-4 my-3 relative ">
-
                             {
-                                projects.map(project => (
+                                projectsview.map(project => (
                                     <motion.div variants={fadeInUp} className="col-span-12 sm:col-span-6  lg:col-span-4 " key={project.name}>
                                         <ProjectCard project={project} showDetail={showDetail} setShowDetail={setShowDetail} />
                                     </motion.div >
@@ -53,4 +51,4 @@ const projects = () => {
 }
 
 
-export default projects
+export default Projects

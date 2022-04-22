@@ -1,8 +1,6 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
 import Layout from '../components/layout/Layout'
-import LinkItem from '../components/navigation/LinkItem'
-import { LinksHome } from '../helpers/data'
 
 const Home: NextPage = () => {
   return (

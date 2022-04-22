@@ -1,11 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React, {  useState } from 'react'
 import Head from "next/head";
 import { MenuIcon } from '@heroicons/react/outline';
 import SideBar from '../navigation/Sidebar';
 import NavItem from '../navigation/NavItem';
 import { NavbarItens } from '../../helpers/data';
 import SidebarOpen from '../navigation/SidebarOpen';
-import { Html } from 'next/document';
+import { motion } from 'framer-motion';
+import { routeAnimation } from '../../motion/animations';
+
 type Props = {
     title: string,
     content: string,
@@ -17,10 +19,7 @@ const Layout: React.FC<Props> = ({ title, content, children }) => {
         setSidebarOpen(false)
     }
 
-
-
     function openModal() {
-
         setSidebarOpen(true)
     }
     return (
@@ -28,9 +27,7 @@ const Layout: React.FC<Props> = ({ title, content, children }) => {
             <Head>
                 <title>{title}</title>
                 <meta name='description' content={content} />
-                <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='' />
-                <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet" />
+              
             </Head>
             <div className='bg-dark '>
                 <SideBar />
@@ -51,11 +48,10 @@ const Layout: React.FC<Props> = ({ title, content, children }) => {
 
                         </div>
                     </div>
-
-                    <main className={`flex-1 ${sidebarOpen&&"opacity-20"}`}>
+                    <motion.main variants={routeAnimation} initial="initial" animate="animate" exit="exit" className={`flex-1 ${sidebarOpen&&"opacity-20"}`}>
                         {children}
 
-                    </main>
+                    </motion.main>
 
                 </div>
 

@@ -78,7 +78,7 @@ export const tools: Skill[] = [
         name: "npm",
     },
 ]
-export const projects: IProject[] = [
+export const projectsData: IProject[] = [
     {
         id: 1,
         name: "Backend Aton",
@@ -91,16 +91,28 @@ export const projects: IProject[] = [
         key_techs: ["Rest framework", "Djoser", "PyJWT","PostgreSQL"],
     },
     {
-        id: 2,
-        name: "Blog DevInfo",
-        image_path: "/assets/images/blog_info.png",
-        deployed_url: "https://visual-algorithm.web.app/",
-        github_url: "https://github.com/Dey-Sumit/algorithm-visualizer",
-        category: ["django"],
+        id: 4,
+        name: "Aton Frontend",
+        image_path: "/assets/images/aton_frontend.png",
+        deployed_url: "https://sumit-chat.netlify.app/",
+        github_url: "https://github.com/anthonidev/frontend-aton",
+        category: ["nextjs"],
         description:
-            "This application is a blog where users can publish their content ",
-        key_techs: ["Tailwind", "PostgreSQL"],
+            "This application is an ecommerce for the sale of TV accessories.",
+        key_techs: ["React", "Tailwind", "TypeScript", "Redux", "Axios"],
     },
+    {
+        id: 8,
+        name: "Frontend Academy ",
+        image_path: "/assets/images/frontend_academy.png",
+        deployed_url: "https://o-my-goal.web.app/",
+        github_url: "https://github.com/anthonidev/frontend-surf-academy",
+        category: ["nextjs"],
+        description:
+            "This is a program to register students in the system ",
+        key_techs: ["Tailwind", "Redux",  "Axios","ReactJS"],
+    },
+    
 
     {
         id: 3,
@@ -117,17 +129,7 @@ export const projects: IProject[] = [
         ],
     },
 
-    {
-        id: 4,
-        name: "Aton Frontend",
-        image_path: "/assets/images/aton_frontend.png",
-        deployed_url: "https://sumit-chat.netlify.app/",
-        github_url: "https://github.com/anthonidev/frontend-aton",
-        category: ["nextjs"],
-        description:
-            "This application is an ecommerce for the sale of TV accessories.",
-        key_techs: ["React", "Tailwind", "TypeScript", "Redux", "Axios"],
-    },
+   
     {
         id: 5,
         name: "Market Book",
@@ -171,15 +173,15 @@ export const projects: IProject[] = [
         ],
     },
     {
-        id: 8,
-        name: "Frontend Academy ",
-        image_path: "/assets/images/frontend_academy.png",
-        deployed_url: "https://o-my-goal.web.app/",
-        github_url: "https://github.com/anthonidev/frontend-surf-academy",
-        category: ["nextjs"],
+        id: 2,
+        name: "Blog DevInfo",
+        image_path: "/assets/images/blog_info.png",
+        deployed_url: "https://visual-algorithm.web.app/",
+        github_url: "https://github.com/Dey-Sumit/algorithm-visualizer",
+        category: ["django"],
         description:
-            "This is a program to register students in the system ",
-        key_techs: ["Tailwind", "Redux",  "Axios","ReactJS"],
+            "This application is a blog where users can publish their content ",
+        key_techs: ["Tailwind", "PostgreSQL"],
     },
     {
         id: 9,
