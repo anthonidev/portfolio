@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import Layout from '../components/layout/Layout'
 import { motion } from 'framer-motion';
-import { fadeInUp, routeAnimation, stagger } from '../motion/animations';
+import { fadeInUp, imagesUp, routeAnimation, stagger } from '../motion/animations';
 
 const about = () => {
     return (
@@ -10,7 +10,7 @@ const about = () => {
             <motion.div variants={routeAnimation} initial="initial" animate="animate" exit="exit" className="relative max-w-7xl container mx-auto  overflow-hidden px-6">
                 <motion.div variants={stagger} initial="initial" animate="animate">
                     <div className="  flex lg:flex-row flex-col  lg:space-x-20 lg:mt-16 xl:mt-20 ">
-                        <div className='xl:w-1/2 xl:mt-16 lg:w-full lg:mt-24 border-t-4 p-3  border-l-4 border-dev'>
+                        <motion.div variants={imagesUp} className='xl:w-1/2 xl:mt-16 lg:w-full lg:mt-24 border-t-4 p-3  border-l-4 border-dev'>
                             <Image
                                 className=""
                                 src={"/assets/images/casualStudent.png"}
@@ -20,7 +20,7 @@ const about = () => {
                                 alt='logo aton'
                                 quality={100}
                             />
-                        </div>
+                        </motion.div>
                         <div className="flex flex-col space-y-6">
                             <motion.h3 variants={fadeInUp} className='font-medium text-dev-100 text-lg md:text-2xl tracking-widest'>Who I am   </motion.h3>
                             <motion.h2 variants={fadeInUp} className='text-3xl md:text-5xl text-let-100'>About Me  🇵🇪</motion.h2>

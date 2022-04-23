@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import Layout from '../components/layout/Layout'
 import { motion } from 'framer-motion';
-import { fadeInUp, routeAnimation, stagger } from '../motion/animations';
+import { fadeInUp, imagesUp, routeAnimation, stagger } from '../motion/animations';
 
 const contact = () => {
     return (
@@ -10,7 +10,7 @@ const contact = () => {
             <motion.div variants={routeAnimation} initial="initial" animate="animate" exit="exit" >
                 <motion.div variants={stagger} initial="initial" animate="animate">
                 <div className="relative max-w-7xl container mx-auto flex  overflow-hidden px-6 ">
-                    <div  className='xl:w-1/2 xl:mt-16 lg:w-full lg:mt-24'>
+                    <motion.div variants={imagesUp} className='xl:w-1/2 xl:mt-16 lg:w-full lg:mt-24'>
                         <Image
                             className=""
                             src={"/assets/images/contactme.png"}
@@ -20,7 +20,7 @@ const contact = () => {
                             alt='logo aton'
                             quality={100}
                         />
-                    </div>
+                    </motion.div>
                     <div className='flex flex-col space-y-8 '>
                         <motion.h1 variants={fadeInUp} className='text-3xl md:text-5xl lg:text-7xl text-let-100 lg:mt-16 xl:mt-32' >Wanna reach out?</motion.h1>
                         <motion.div variants={fadeInUp} className="hidden xl:block">

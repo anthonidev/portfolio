@@ -22,7 +22,7 @@ const SideBar = () => {
                                     <div
                                         className="  flex-shrink-0 flex items-center px-4">
                                         <Link href={'/'}>
-                                            <motion.a whileTap={{ rotate: 90, scale: 0.75 }}  >
+                                            <motion.a className='cursor-pointer' whileTap={{ rotate: 90, scale: 0.75 }}  >
                                                 <Image
                                                     className="h-8 w-auto sm:h-10"
                                                     src={"/assets/images/logo4.png"}
