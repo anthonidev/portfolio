@@ -30,7 +30,6 @@ const Projects = () => {
     return (
         <Layout content='Projects Anthoni Portocarrero Rodriguez' title='Projects | AnthoniDev' >
             <div className="relative max-w-7xl container mx-auto  overflow-hidden px-6">
-                <div className=" ">
                     <motion.div variants={routeAnimation} initial="initial" animate="animate" exit="exit" className="px-5 py-2 overflow-y-scroll" >
                         <ProjectsNavbar handlerFilterCategory={handlerFilterCategory} active={active} />
 
@@ -44,7 +43,6 @@ const Projects = () => {
                             }
                         </motion.div>
                     </motion.div>
-                </div>
             </div>
         </Layout>
     )

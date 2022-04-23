@@ -16,6 +16,7 @@ export interface LinkIten {
 export interface Skill {
     Icon: IconType;
     name:string;
+    color:string
 }
 
 export interface IProject {

@@ -23,41 +23,58 @@ export const languages: Skill[] = [
     {
         Icon: IoLogoPython,
         name: "Python",
+        color:"yellow",
     },
 
     {
         Icon: IoLogoJavascript,
         name: "JavaScript",
+        color:"yellow"
+
     },
     {
         Icon: SiTypescript,
         name: "TypeScript",
+        color:"blue"
+
     },
 ]
 export const framework: Skill[] = [
     {
         Icon: SiDjango,
         name: "Django",
+        color:"green"
+
     },
     {
         Icon: SiNextdotjs,
         name: "Next js",
+        color:"black"
+
     },
     {
         Icon: SiTailwindcss,
         name: "Tailwind",
+        color:"sky"
+
     },
     {
         Icon: GrReactjs,
         name: "React",
+        color:"sky"
+
     },
     {
         Icon: SiRedux,
         name: "Redux",
+        color:"violet"
+
     },
     {
         Icon: FiFramer,
         name: "Framer Motion",
+        color:"black"
+
     },
 
 
@@ -67,15 +84,21 @@ export const tools: Skill[] = [
     {
         Icon: SiPostgresql,
         name: "Postgresql",
+        color:"sky"
+
     },
     {
         Icon: SiPostman,
         name: "Postman",
+        color:"orange"
+
     },
 
     {
         Icon: IoLogoNpm,
         name: "npm",
+        color:"red"
+
     },
 ]
 export const projectsData: IProject[] = [
@@ -88,7 +111,7 @@ export const projectsData: IProject[] = [
         deployed_url: "https://covid-19-tracker-by-sumit.web.app/",
         github_url: "https://github.com/anthonidev/backend-aton",
         category: ["django"],
-        key_techs: ["Rest framework", "Djoser", "PyJWT","PostgreSQL"],
+        key_techs: ["Rest framework", "Djoser", "PyJWT", "PostgreSQL"],
     },
     {
         id: 4,
@@ -110,9 +133,9 @@ export const projectsData: IProject[] = [
         category: ["nextjs"],
         description:
             "This is a program to register students in the system ",
-        key_techs: ["Tailwind", "Redux",  "Axios","ReactJS"],
+        key_techs: ["Tailwind", "Redux", "Axios", "ReactJS"],
     },
-    
+
 
     {
         id: 3,
@@ -129,7 +152,7 @@ export const projectsData: IProject[] = [
         ],
     },
 
-   
+
     {
         id: 5,
         name: "Market Book",
@@ -139,7 +162,7 @@ export const projectsData: IProject[] = [
         category: ["django", "postgresql"],
         description:
             "This application is a marketplace for buying and selling books",
-        key_techs: [ "Tailwind", "Stripe"],
+        key_techs: ["Tailwind", "Stripe"],
     },
 
     {
@@ -148,10 +171,10 @@ export const projectsData: IProject[] = [
         image_path: "/assets/images/facebook_clone.png",
         deployed_url: "!#",
         github_url: "https://github.com/anthonidev/SocialPy",
-        category: ["django","postgresql"],
+        category: ["django", "postgresql"],
         description:
             "Typical Social Media App where one can post,like ,comment etc",
-        key_techs: ["PyJWT","Tailwind"],
+        key_techs: ["PyJWT", "Tailwind"],
     },
     {
         id: 7,
@@ -159,7 +182,7 @@ export const projectsData: IProject[] = [
         image_path: "/assets/images/tws_shop.png",
         deployed_url: "https://not-utube.web.app/",
         github_url: "https://github.com/anthonidev/odin",
-        category: ["react","django","postgresql"],
+        category: ["react", "django", "postgresql"],
         description:
             'This application is an ecommerce for the sale of clothes. ',
         key_techs: [
@@ -192,6 +215,6 @@ export const projectsData: IProject[] = [
         category: ["django"],
         description:
             "This is an application that manages the control and authentication of users",
-        key_techs: ["Rest framework", "Djoser", "PyJWT","PostgreSQL"],
+        key_techs: ["Rest framework", "Djoser", "PyJWT", "PostgreSQL"],
     },
 ];

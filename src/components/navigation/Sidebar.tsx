@@ -5,6 +5,8 @@ import Image from 'next/image';
 import Themes from '../theme/Theme';
 import { LinksHome } from '../../helpers/data';
 import LinkItem from './LinkItem';
+import { motion } from 'framer-motion';
+import { container, itemA } from '../../motion/animations';
 
 const SideBar = () => {
 
@@ -17,9 +19,10 @@ const SideBar = () => {
                         <div className="flex flex-col sm:flex-row sm:justify-around">
                             <div className="w-72 h-screen">
                                 <div className="flex items-center justify-start mx-6 mt-10">
-                                    <div className="dark:hidden  flex-shrink-0 flex items-center px-4">
+                                    <div
+                                        className="  flex-shrink-0 flex items-center px-4">
                                         <Link href={'/'}>
-                                            <a >
+                                            <motion.a whileTap={{ rotate: 90, scale: 0.75 }}  >
                                                 <Image
                                                     className="h-8 w-auto sm:h-10"
                                                     src={"/assets/images/logo4.png"}
@@ -29,25 +32,11 @@ const SideBar = () => {
                                                     alt='logo aton'
                                                     quality={100}
                                                 />
-                                            </a>
+                                            </motion.a>
 
                                         </Link>
                                     </div>
-                                    <div className="hidden cursor-pointer dark:flex flex-shrink-0  items-center px-4">
-                                        <Link href={'/'}>
-                                            <a >
-                                                <Image
-                                                    className="h-8 w-auto sm:h-10"
-                                                    src={"/assets/images/logo4.png"}
-                                                    height="70px"
-                                                    width="70px"
-                                                    layout="intrinsic"
-                                                    alt='logo aton'
-                                                    quality={100}
-                                                />
-                                            </a>
-                                        </Link>
-                                    </div>
+
                                 </div>
 
                                 <div className="absolute bottom-0 my-10 mx-10">
