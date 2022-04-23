@@ -41,7 +41,7 @@ const Layout: React.FC<Props> = ({ title, content, children }) => {
                             <MenuIcon className='h-8 w-8' />
                             <span className="sr-only">Open navbar</span>
                         </button>
-                        <div className=" hidden  flex-1 md:flex items-center justify-end mr-5 md:mr-24  space-x-2">
+                        <div className=" hidden   flex-1 md:flex items-center justify-end mr-5 md:mr-24  space-x-2 z-40 bg-dark">
                             {
                                 NavbarItens.map((iten, index) => (<NavItem key={index} iten={iten} />))
                             }

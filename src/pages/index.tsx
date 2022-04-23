@@ -26,11 +26,11 @@ const Home: NextPage = () => {
             </motion.div>
             <div className='flex flex-col space-y-4 '>
               <motion.h3 variants={fadeInUp} className='font-medium text-dev-100 text-lg md:text-2xl tracking-widest' >Hi, my name is</motion.h3>
-              <motion.h1 variants={fadeInUp} className='text-3xl md:text-5xl lg:text-7xl text-let-100 ' >Anthoni Potocarrero.</motion.h1>
+              <motion.h1 variants={fadeInUp} className='text-3xl md:text-5xl lg:text-7xl text-let-100 ' >Anthoni Portocarrero.</motion.h1>
               <motion.h1 variants={fadeInUp} className='text-4xl md:text-6xl lg:text-8xl text-let ' >I build things for the web.</motion.h1>
               <motion.div variants={fadeInUp} className="hidden xl:block">
                 <h4 className='text-xl md:text-1xl  lg:text-3xl text-let tracking-widest max-w-2xl' >
-                  I am a software engineer who specializes in creating interactive websites using <span className='text-yellow-400'>python</span>  and <span className='text-dev'>javascript</span>.</h4>
+                  I am software engineer who specializes in creating interactive websites using <span className='text-yellow-400'>python</span>  and <span className='text-dev'>javascript</span>.</h4>
                 <div className='flex justify-around mb-3'>
                   <motion.div whileHover={{ scale: 0.9 }} className='border-dev border-2 rounded-lg mt-6 hover:bg-dev-200 '>
                     <button onClick={() => window.open("mailto:softwaretoni21@gmail.com")} className='px-7 py-4 '><span className='text-dev tracking-widest text-lg '>Contact me</span> </button>

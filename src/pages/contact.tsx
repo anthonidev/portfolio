@@ -9,8 +9,8 @@ const contact = () => {
         <Layout content='Contact Anthoni Portocarrero Rodriguez' title='Contact | AnthoniDev' >
             <motion.div variants={routeAnimation} initial="initial" animate="animate" exit="exit" >
                 <motion.div variants={stagger} initial="initial" animate="animate">
-                <div className="relative max-w-7xl container mx-auto flex  overflow-hidden px-6 ">
-                    <motion.div variants={imagesUp} className='xl:w-1/2 xl:mt-16 lg:w-full lg:mt-24'>
+                <div className="relative max-w-7xl container mx-auto flex flex-col lg:flex-row  overflow-hidden px-6 ">
+                    <motion.div variants={imagesUp} className='  xl:w-1/2 xl:mt-16 lg:w-full lg:mt-24'>
                         <Image
                             className=""
                             src={"/assets/images/contactme.png"}
@@ -23,7 +23,7 @@ const contact = () => {
                     </motion.div>
                     <div className='flex flex-col space-y-8 '>
                         <motion.h1 variants={fadeInUp} className='text-3xl md:text-5xl lg:text-7xl text-let-100 lg:mt-16 xl:mt-32' >Wanna reach out?</motion.h1>
-                        <motion.div variants={fadeInUp} className="hidden xl:block">
+                        <motion.div variants={fadeInUp} className="">
                             <h4 className='text-xl md:text-1xl  lg:text-3xl text-let tracking-widest max-w-2xl' >
                                 Feel free to drop me a message if you have some interesting offer or if you want to say hello me</h4>
                             <div className='flex flex-col space-y-5 mt-4'>
@@ -53,10 +53,11 @@ const contact = () => {
                         </motion.div>
 
                     </div>
+                    <motion.h3 variants={fadeInUp} className='block lg:hidden font-medium text-dev-100 text-lg md:text-2xl tracking-normal absolute bottom-10 right-10' >Designed & Crafted by Anthoni © 2022</motion.h3>
 
 
                 </div>
-                <motion.h3 variants={fadeInUp} className='font-medium text-dev-100 text-lg md:text-2xl tracking-normal absolute bottom-10 right-10' >Designed & Crafted by Anthoni © 2022</motion.h3>
+                <motion.h3 variants={fadeInUp} className='lg:block hidden  font-medium text-dev-100 text-lg md:text-2xl tracking-normal absolute bottom-10 right-10' >Designed & Crafted by Anthoni © 2022</motion.h3>
                 </motion.div>
             </motion.div>
         </Layout>

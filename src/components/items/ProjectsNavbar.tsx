@@ -25,7 +25,7 @@ export const NavItem:FunctionComponent<{
 
 const ProjectsNavbar:FunctionComponent<{handlerFilterCategory:Function,active:string }> = (props) => {
     return (
-        <div className="flex px-3 py-2 space-x-3 md:space-x-6 overflow-x-auto list-none">
+        <div className="flex px-3 py-2 space-x-3 md:space-x-6 overflow-x-auto list-none " >
             <NavItem value='all' {...props}/>
             <NavItem value='react' {...props}/>
             <NavItem value='nextjs' {...props}/>

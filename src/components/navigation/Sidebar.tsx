@@ -47,7 +47,7 @@ const SideBar = () => {
                                         }
 
                                     </div>
-                                    <div className='bg-let rounded-lg w-1 flex justify-center items-center  h-40 ml-5 mt-2'></div>
+                                    <div className=' lg:flex hidden bg-let rounded-lg w-1  justify-center items-center  h-40 ml-5 mt-2'></div>
                                 </div>
                             </div>
                         </div>

@@ -17,7 +17,7 @@ const NavItem: FunctionComponent<{ iten: NavbarIten }> = ({ iten: {
         <>
             <motion.div whileTap={{ scale: 0.75 }} className='w-full block md:hidden'>
                 <Link href={to}>
-                    <a className={`flex justify-between mx-6  hover:text-dev  ${pathname === to ? select : noSelect} border-2 p-2  rounded-lg hover:border-dev `}>
+                    <a className={`flex justify-between mx-6  hover:text-dev ${pathname === to ? select : noSelect} border-2 p-2  rounded-lg hover:border-dev `}>
                         <Icon className='h-8 w-8 ' />
                         <span className=' text-2xl tracking-widest' >{name}</span>
                     </a>
