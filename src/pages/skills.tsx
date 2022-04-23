@@ -6,6 +6,9 @@ import ItemSkill from '../components/items/ItemSkill';
 import { motion } from 'framer-motion';
 import { fadeInUp, imagesUp, routeAnimation, stagger } from '../motion/animations';
 
+import contructFile from '../../public/assets/images/contruct.png'
+
+
 const skills = () => {
     return (
         <Layout content='Skills Anthoni Portocarrero Rodriguez' title='Skills | AnthoniDev' >
@@ -18,12 +21,14 @@ const skills = () => {
                         <motion.div variants={imagesUp} className="hidden lg:block">
                             <Image
                                 className=""
-                                src={"/assets/images/contruct.png"}
+                                src={contructFile}
                                 layout="responsive"
                                 height="120px"
                                 width="128px"
                                 alt='logo aton'
                                 quality={40}
+                                priority
+
                             />
                         </motion.div>
 

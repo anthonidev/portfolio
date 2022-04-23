@@ -20,8 +20,6 @@ export const stagger = {
     }
 }
 
-
-
 export const container = {
     hidden: { rotate: 90 },
     show: {
@@ -43,6 +41,11 @@ export const itemB = {
     show: { scale: 1, top: 80 }
 };
 
+export const sidebar = {
+    open: { opacity: 1, x: 0 },
+    closed: { opacity: 0, x: "-100%" },
+
+}
 export const imagesUp = {
     initial: {
         opacity: 0,

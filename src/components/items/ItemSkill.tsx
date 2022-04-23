@@ -31,12 +31,11 @@ const ItemSkill: FunctionComponent<{
       if (color === "green") setColorHover(green)
     }, [colorHover])
 
-    console.log(colorHover);
 
 
     return (
       <motion.div drag
-        dragConstraints={{ top: -150, right: 150, bottom: 150, left: -300}}
+        dragConstraints={{ top: -150, right: 150, bottom: 150, left: -300 }}
         dragTransition={{ bounceStiffness: 600, bounceDamping: 20 }}
         dragElastic={0.5}
         whileTap={{ cursor: "grabbing" }} className={`flex flex-col justify-center items-center text-let  ${colorHover} cursor-grabbing `}>

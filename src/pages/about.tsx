@@ -3,6 +3,7 @@ import React from 'react'
 import Layout from '../components/layout/Layout'
 import { motion } from 'framer-motion';
 import { fadeInUp, imagesUp, routeAnimation, stagger } from '../motion/animations';
+import casualStudent from '../../public/assets/images/casualStudent.png'
 
 const about = () => {
     return (
@@ -12,12 +13,12 @@ const about = () => {
                     <div className="  flex lg:flex-row flex-col  lg:space-x-20 lg:mt-16 xl:mt-20 ">
                         <motion.div variants={imagesUp} className='xl:w-1/2 xl:mt-16 lg:w-full lg:mt-24 border-t-4 p-3  border-l-4 border-dev'>
                             <Image
-                                className=""
-                                src={"/assets/images/casualStudent.png"}
+                                src={casualStudent}
                                 layout="responsive"
                                 height="128px"
                                 width="128px"
                                 alt='logo aton'
+                                priority
                                 quality={100}
                             />
                         </motion.div>

@@ -1,12 +1,10 @@
 import React from 'react'
-
 import Link from 'next/link';
 import Image from 'next/image';
-import Themes from '../theme/Theme';
 import { LinksHome } from '../../helpers/data';
 import LinkItem from './LinkItem';
 import { motion } from 'framer-motion';
-import { container, itemA } from '../../motion/animations';
+import logoFile from '../../../public/assets/images/logo4.png'
 
 const SideBar = () => {
 
@@ -25,7 +23,7 @@ const SideBar = () => {
                                             <motion.a className='cursor-pointer' whileTap={{ rotate: 90, scale: 0.75 }}  >
                                                 <Image
                                                     className="h-8 w-auto sm:h-10"
-                                                    src={"/assets/images/logo4.png"}
+                                                    src={logoFile}
                                                     height="70px"
                                                     width="70px"
                                                     layout="intrinsic"

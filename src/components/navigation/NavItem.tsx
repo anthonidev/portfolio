@@ -13,23 +13,31 @@ const NavItem: FunctionComponent<{ iten: NavbarIten }> = ({ iten: {
     const noSelect = ' text-let-100  border-let '
     const select = 'text-dev  border-dev  '
 
+
+
     return (
         <>
-            <motion.div whileTap={{ scale: 0.75 }} className='w-full block md:hidden'>
+            <div className='w-full block md:hidden'>
                 <Link href={to}>
-                    <a className={`flex justify-between mx-6  hover:text-dev ${pathname === to ? select : noSelect} border-2 p-2  rounded-lg hover:border-dev `}>
-                        <Icon className='h-8 w-8 ' />
-                        <span className=' text-2xl tracking-widest' >{name}</span>
+                    <a>
+                        <motion.div whileTap={{ scale: 0.85 }} whileHover={{scale:1.10}} className={`flex justify-between mx-6  hover:text-dev ${pathname === to ? select : noSelect} border-2 p-2  rounded-lg hover:border-dev `}>
+                            <Icon className='h-8 w-8 ' />
+                            <span className=' text-2xl tracking-widest' >{name}</span>
+                        </motion.div>
                     </a>
+
                 </Link>
-            </motion.div>
-            <motion.div whileTap={{ rotate: 90, scale: 0.75 }} className='md:block hidden'>
+            </div>
+            <div className='md:block hidden'>
                 <Link href={to}>
-                    <a className={`flex justify-center mx-2  hover:text-dev  ${pathname === to ? select : noSelect} border-b-2 p-2   hover:border-dev `}>
-                        <span className=' text-xl tracking-widest' >{name}</span>
+                    <a>
+                        <motion.div whileTap={{ scale: 0.85 }}  whileHover={{scale:1.10}} className={`flex justify-center mx-2  hover:text-dev  ${pathname === to ? select : noSelect} border-b-2 p-2   hover:border-dev `}>
+                            <span className=' text-xl tracking-widest' >{name}</span>
+                        </motion.div>
                     </a>
+
                 </Link>
-            </motion.div>
+            </div>
         </>
     )
 }

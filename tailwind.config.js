@@ -7,6 +7,7 @@ module.exports = {
   theme: {
     fontFamily: {
       'aleo': ['Aleo'],
+      'frank': ['Frank Ruhl Libre'],
     },
     extend: {
       colors:{

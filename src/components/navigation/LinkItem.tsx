@@ -11,7 +11,7 @@ const LinkItem: FunctionComponent<{ iten: LinkIten }> = ({ iten: {
     return (
         <div>
             <Link href={to}>
-                <a ><Icon className={`w-12 h-12 text-let hover:text-dev `} /></a>
+                <a  ><Icon className={`w-12 h-12 text-let hover:text-dev `} /></a>
             </Link>
         </div>
     )

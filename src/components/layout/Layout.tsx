@@ -1,4 +1,4 @@
-import React, {  useState } from 'react'
+import React, { useState } from 'react'
 import Head from "next/head";
 import { MenuIcon } from '@heroicons/react/outline';
 import SideBar from '../navigation/Sidebar';
@@ -6,7 +6,7 @@ import NavItem from '../navigation/NavItem';
 import { NavbarItens } from '../../helpers/data';
 import SidebarOpen from '../navigation/SidebarOpen';
 import { motion } from 'framer-motion';
-import { routeAnimation } from '../../motion/animations';
+import { routeAnimation, sidebar } from '../../motion/animations';
 
 type Props = {
     title: string,
@@ -27,7 +27,6 @@ const Layout: React.FC<Props> = ({ title, content, children }) => {
             <Head>
                 <title>{title}</title>
                 <meta name='description' content={content} />
-              
             </Head>
             <div className='bg-dark '>
                 <SideBar />
@@ -45,20 +44,16 @@ const Layout: React.FC<Props> = ({ title, content, children }) => {
                             {
                                 NavbarItens.map((iten, index) => (<NavItem key={index} iten={iten} />))
                             }
-
                         </div>
                     </div>
-                    <motion.main variants={routeAnimation} initial="initial" animate="animate" exit="exit" className={`flex-1 ${sidebarOpen&&"opacity-20"}`}>
+                    <motion.main variants={routeAnimation} initial="initial" animate="animate" exit="exit" className={`flex-1 ${sidebarOpen && "opacity-20"}`}>
                         {children}
-
                     </motion.main>
-
                 </div>
-
-
-
             </div>
-            <SidebarOpen sidebarOpen={sidebarOpen} closeModal={closeModal} />
+            {
+                sidebarOpen ? (<motion.div      ><SidebarOpen closeModal={closeModal} /></motion.div>) : (<></>)
+            }
         </>
     )
 }

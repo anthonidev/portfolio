@@ -15,8 +15,8 @@ export const NavbarItens: NavbarIten[] = [
     { name: 'Contact', to: '/contact', Icon: AiFillMessage },
 ];
 export const LinksHome: LinkIten[] = [
-    { name: 'GitHub', to: '/', Icon: AiFillGithub },
-    { name: 'Linkedin', to: '/about', Icon: AiFillLinkedin },
+    { name: 'GitHub', to: 'https://github.com/anthonidev', Icon: AiFillGithub },
+    { name: 'Linkedin', to: 'https://www.linkedin.com/in/anthoni-portotocarrero-rodriguez-06089119a/', Icon: AiFillLinkedin },
 ];
 
 export const languages: Skill[] = [
@@ -107,7 +107,7 @@ export const projectsData: IProject[] = [
         name: "Backend Aton",
         description:
             "This application creates the endpoints to be consumed in the frontend",
-        image_path: "/assets/images/backend_aton.png",
+        image_path: "/assets/images/backend_aton.jpg",
         deployed_url: "https://covid-19-tracker-by-sumit.web.app/",
         github_url: "https://github.com/anthonidev/backend-aton",
         category: ["django"],
@@ -116,7 +116,7 @@ export const projectsData: IProject[] = [
     {
         id: 4,
         name: "Aton Frontend",
-        image_path: "/assets/images/aton_frontend.png",
+        image_path: "/assets/images/aton_frontend.jpg",
         deployed_url: "https://sumit-chat.netlify.app/",
         github_url: "https://github.com/anthonidev/frontend-aton",
         category: ["nextjs"],
@@ -127,7 +127,7 @@ export const projectsData: IProject[] = [
     {
         id: 8,
         name: "Frontend Academy ",
-        image_path: "/assets/images/frontend_academy.png",
+        image_path: "/assets/images/frontend_academy.jpg",
         deployed_url: "https://o-my-goal.web.app/",
         github_url: "https://github.com/anthonidev/frontend-surf-academy",
         category: ["nextjs"],
@@ -140,7 +140,7 @@ export const projectsData: IProject[] = [
     {
         id: 3,
         name: "Criptografia",
-        image_path: "/assets/images/criptografia.png",
+        image_path: "/assets/images/criptografia.jpg",
         deployed_url: "https://dev-talks.herokuapp.com/",
         github_url: "https://github.com/anthonidev/Criptografia",
         category: ["nextjs"],
@@ -156,7 +156,7 @@ export const projectsData: IProject[] = [
     {
         id: 5,
         name: "Market Book",
-        image_path: "/assets/images/market_place.png",
+        image_path: "/assets/images/market_place.jpg",
         deployed_url: "http://sumaxtweetme.pythonanywhere.com/",
         github_url: "https://github.com/anthonidev/marketplace",
         category: ["django", "postgresql"],
@@ -168,7 +168,7 @@ export const projectsData: IProject[] = [
     {
         id: 6,
         name: "Facebook CLone",
-        image_path: "/assets/images/facebook_clone.png",
+        image_path: "/assets/images/facebook_clone.jpg",
         deployed_url: "!#",
         github_url: "https://github.com/anthonidev/SocialPy",
         category: ["django", "postgresql"],
@@ -179,7 +179,7 @@ export const projectsData: IProject[] = [
     {
         id: 7,
         name: "TWS SHOP  ",
-        image_path: "/assets/images/tws_shop.png",
+        image_path: "/assets/images/tws_shop.jpg",
         deployed_url: "https://not-utube.web.app/",
         github_url: "https://github.com/anthonidev/odin",
         category: ["react", "django", "postgresql"],
@@ -198,7 +198,7 @@ export const projectsData: IProject[] = [
     {
         id: 2,
         name: "Blog DevInfo",
-        image_path: "/assets/images/blog_info.png",
+        image_path: "/assets/images/blog_info.jpg",
         deployed_url: "https://visual-algorithm.web.app/",
         github_url: "https://github.com/Dey-Sumit/algorithm-visualizer",
         category: ["django"],
@@ -209,7 +209,7 @@ export const projectsData: IProject[] = [
     {
         id: 9,
         name: "Backend Academy ",
-        image_path: "/assets/images/backend_academy.png",
+        image_path: "/assets/images/backend_academy.jpg",
         deployed_url: "https://o-my-goal.web.app/",
         github_url: "https://github.com/anthonidev/backend-surf-academy",
         category: ["django"],
