@@ -30,7 +30,7 @@ const Projects = () => {
     return (
         <Layout content='Projects Anthoni Portocarrero Rodriguez' title='Projects | AnthoniDev' >
             <div className="relative max-w-7xl container mx-auto  overflow-hidden px-6">
-                    <motion.div variants={routeAnimation} initial="initial" animate="animate" exit="exit" className="px-5 py-2 overflow-y-scroll" >
+                    <motion.div variants={routeAnimation} initial="initial" animate="animate" exit="exit" className="px-5 py-2 overflow-hidden" >
                         <ProjectsNavbar handlerFilterCategory={handlerFilterCategory} active={active} />
 
                         <motion.div variants={stagger} initial="initial" animate="animate" className="grid  grid-cols-12 gap-4 my-3 relative ">
