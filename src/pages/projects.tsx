@@ -6,9 +6,7 @@ import { motion } from 'framer-motion';
 import ProjectsNavbar from '../components/items/ProjectsNavbar';
 import { fadeInUp, routeAnimation, stagger } from '../motion/animations';
 import ProjectCard from '../components/items/ProjectCard';
-
 const Projects = () => {
-
     const [projectsview, setProjects] = useState<IProject[]>(projectsData);
     const [active, setActive] = useState<string>("all");
     const [showDetail, setShowDetail] = useState<number | null>(null)

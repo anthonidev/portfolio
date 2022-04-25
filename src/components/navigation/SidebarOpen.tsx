@@ -51,7 +51,7 @@ const SidebarOpen: FunctionComponent<{
                         ))
                     }
                 </motion.nav>
-                <div className="flex space-x-5 absolute bottom-0 my-10 mx-10">
+                <div className=" space-x-5 absolute bottom-0 my-10 mx-10 hidden md:flex">
                     {
                         LinksHome.map((iten, index) => (<LinkItem key={index} iten={iten} />))
                     }

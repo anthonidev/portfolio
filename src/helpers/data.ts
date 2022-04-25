@@ -16,7 +16,7 @@ export const NavbarItens: NavbarIten[] = [
 ];
 export const LinksHome: LinkIten[] = [
     { name: 'GitHub', to: 'https://github.com/anthonidev', Icon: AiFillGithub },
-    { name: 'Linkedin', to: 'https://www.linkedin.com/in/anthoni-portotocarrero-rodriguez-06089119a/', Icon: AiFillLinkedin },
+    // { name: 'Linkedin', to: 'https://www.linkedin.com/in/anthoni-portotocarrero-rodriguez-06089119a/', Icon: AiFillLinkedin },
 ];
 
 export const languages: Skill[] = [

@@ -26,7 +26,7 @@ const ProjectCard: FunctionComponent<{
   setShowDetail
 }) => {
     return (
-      <div className="dark:bg-dark-300 hover:dark:bg-dark-100 bg-gray-200 p-2 text-let-100  rounded-lg">
+      <div className="dark:bg-dark-300 hover:dark:bg-dark-100 bg-gray-200 p-2 text-let-100  rounded-lg overflow-y-auto">
 
         <Image
           src={image_path}
@@ -42,9 +42,9 @@ const ProjectCard: FunctionComponent<{
 
         {
           showDetail === id && (
-            <div className="absolute md:top-0  left-0 grid z-10 p-2 rounded-lg md:p-10 dark:bg-dark-100 md:grid-cols-2 h-auto w-full gap-x-12 text-black bg-gray-100 dark:text-white">
+            <div className="sm:absolute md:top-0  left-0 grid z-10 p-2 rounded-lg md:p-10 dark:bg-dark-100 md:grid-cols-2 h-auto w-full gap-x-12 text-black bg-gray-100 dark:text-white">
               <motion.div variants={stagger} initial="initial" animate="animate">
-                <motion.div variants={fadeInUp} className="border-4 border-gray-100">
+                <motion.div variants={fadeInUp} className="border-4 border-gray-100 hidden md:block">
                   <Image
                     src={image_path}
                     alt={name}
