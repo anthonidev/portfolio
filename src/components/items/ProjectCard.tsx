@@ -57,7 +57,7 @@ const ProjectCard: FunctionComponent<{
                   <a href={github_url} target="_blank" rel="noopener noreferrer" className="flex items-center px-4 py-2 hover:dark:bg-dev-200 space-x-3 text-lg text-dev border border-dev rounded-lg bg-gray-200 dark:bg-dark-200">
                     <AiFillGithub /> <span className="tracking-wide ">Github</span>
                   </a>
-                 
+
                 </motion.div>
 
               </motion.div>
