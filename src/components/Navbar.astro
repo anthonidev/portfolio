@@ -1,0 +1,60 @@
+---
+import { Icon } from "astro-icon/components";
+
+const links = [
+  {
+    name: "Inicio",
+    href: "/",
+    icon: "home",
+  },
+  {
+    name: "Proyectos",
+    href: "/",
+    icon: "folder",
+  },
+  {
+    name: "Experiencia",
+    href: "/",
+    icon: "exp",
+  },
+  {
+    name: "Herramientas",
+    href: "/",
+    icon: "tools",
+  },
+  {
+    name: "Contacto",
+    href: "/",
+    icon: "contact",
+  },
+];
+---
+
+<nav class="my-10 lg:my-16">
+  <ul
+    class="flex justify-between items-center max-w-xs px-8 py-4 rounded-2xl mx-auto"
+  >
+    {
+      links.map((link) => (
+        <li>
+          <a href={link.href}>
+            <Icon name={link.icon} />
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>
+
+<style>
+  ul {
+    background-color: #1c1a19;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+</style>
