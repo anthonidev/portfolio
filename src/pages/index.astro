@@ -2,11 +2,13 @@
 import { Icon } from "astro-icon/components";
 import Profile from "../components/Profile.astro";
 import Layout from "../layouts/Layout.astro";
+import Projects from "../components/sections/Projects.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-  <main class="flex flex-col lg:flex-row max-w-7xl mx-auto">
+  <main class="flex flex-col lg:flex-row max-w-7xl mx-auto h-full">
     <Profile />
+
     <div class="w-full lg:w-2/3">
       <h1
         class="text-5xl lg:text-9xl font-bold lg:text-start text-center flex flex-col pt-20"
@@ -25,29 +27,30 @@ import Layout from "../layouts/Layout.astro";
         Google Analytics y Tag Manager
       </p>
       <div
-        class="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-8 lg:mt-16 max-w-xl"
+        class="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-8 lg:mt-16 max-w-2xl"
       >
-        <div class="card max-w-xs mx-auto bg-[#e9763f]">
-          <Icon name="home" class="text-white text-4xl" />
+        <div class="card2 max-w-xs mx-auto bg-[#e9763f]">
+          <Icon name="layout" class="text-white text-4xl" />
           <p class="text-white">Diseño de interfaces, Experiencia de usuario</p>
           <div class="flex justify-end items-end w-full">
             <Icon
-              name="home"
+              name="arrow-r"
               class="text-white text-end text-3xl border border-white rounded-lg p-1 hover:bg-white hover:text-[#e9763f]"
             />
           </div>
         </div>
         <div class="card max-w-xs mx-auto bg-[#CCFF53] w-full">
-          <Icon name="home" class="text-black text-4xl" />
+          <Icon name="stack" class="text-black text-4xl" />
           <p>Next js, Astro, NestJS, Django</p>
           <div class="flex justify-end items-end w-full">
             <Icon
-              name="home"
+              name="arrow-r"
               class="text-black text-end text-3xl border border-black rounded-lg p-1 hover:bg-black hover:text-white"
             />
           </div>
         </div>
       </div>
+      <Projects />
     </div>
   </main>
 </Layout>
@@ -59,10 +62,26 @@ import Layout from "../layouts/Layout.astro";
     flex-direction: column;
     gap: 1rem;
     border-radius: 1rem;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%20422%20284%22%3E%3Cpath%20d%3D%22M%2033.026%200.557%20L%204.893%20135.318%20L%2098.467%2061.255%20L%20128.435%20164.831%20L%20227.513%2061.255%20L%20250.754%20164.831%20L%20310.078%20107.475%20L%20328.426%20247.247%20L%20426.893%20107.475%20L%20433.62%20254.486%20L%20472.762%20292.353%22%20fill%3D%22transparent%22%20stroke-width%3D%225%22%20stroke%3D%22rgba(108%2C227%2C182%2C0.5)%22%20stroke-miterlimit%3D%2210%22%20stroke-dasharray%3D%22%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    background-size: 100% 60%;
   }
 
   .card p {
+    font-size: 1.4rem;
+    line-height: 1;
+    font-weight: 500;
+  }
+
+  .card2 {
+    padding: 2.4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 1rem;
+    background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%20388%20155%22%3E%3Cpath%20d%3D%22M%20400.825%20526.501%20C%20359.981%20521.61%20275.061%20502.161%20262.145%20463.503%20C%20249.228%20424.845%2064.622%20467.64%20-26.068%20493.869%20L%20-1.845%20151.05%20C%2071.348%20136.783%20216.884%2099.23%20213.496%2063.159%20C%20209.26%2018.069%20245.759%2011.716%20307.691%2018.653%20C%20369.624%2025.591%20361.774%209.523%20393.416%202.626%22%20fill%3D%22transparent%22%20stroke-width%3D%225%22%20stroke%3D%22rgba(202%2C%2089%2C%2046%2C%200.4)%22%20stroke-miterlimit%3D%2210%22%20stroke-dasharray%3D%22%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+  }
+
+  .card2 p {
     font-size: 1.4rem;
     line-height: 1;
     font-weight: 500;

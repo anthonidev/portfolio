@@ -1,0 +1,77 @@
+---
+const projects = [
+  {
+    id: 1,
+    title: "Projecto 1",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies.",
+    image: "/images/project1.jpg",
+    link: "#",
+  },
+  {
+    id: 2,
+    title: "Projecto 2",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies.",
+    image: "/images/project2.jpg",
+    link: "#",
+  },
+  {
+    id: 3,
+    title: "Projecto 3",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies.",
+    image: "/images/project3.jpg",
+    link: "#",
+  },
+  {
+    id: 4,
+    title: "Projecto 4",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies.",
+    image: "/images/project4.jpg",
+    link: "#",
+  },
+];
+---
+
+<div>
+  <h2
+    class="text-5xl lg:text-8xl font-bold lg:text-start text-center flex flex-col pt-20"
+  >
+    <span class="text-white">Projectos</span>
+    <span class="text-[#565455]">Recientes</span>
+  </h2>
+
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-8 lg:mt-16 max-w-2xl">
+    {
+      projects.map((project) => (
+        <div key={project.id}>
+          <div class=" w-full">
+            <img
+              src={project.image}
+              alt={project.title}
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h3
+                class="text-white
+                      font-bold text-xl"
+              >
+                {project.title}
+              </h3>
+              <p class="text-white">{project.description}</p>
+              <a
+                href={project.link}
+                class="text-white
+                      underline"
+              >
+                Ver más
+              </a>
+            </div>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</div>
